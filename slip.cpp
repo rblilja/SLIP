@@ -8,12 +8,12 @@
  *
  * @see RFC 1055 
  *
- * @file SLIP.cpp
+ * @file slip.cpp
  * @author Robin Lilja
  * @date 29 Sep 2015
  */
 
-#include "SLIP.h"
+#include "slip.h"
 
 #include <string.h>		// Using memcpy()
 #include <stdint.h>
