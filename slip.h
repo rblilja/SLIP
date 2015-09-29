@@ -8,7 +8,7 @@
  *
  * @see RFC 1055 
  *
- * @file SLIP.h
+ * @file slip.h
  * @author Robin Lilja
  * @date 29 Sep 2015
  */
