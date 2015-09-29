@@ -21,16 +21,16 @@
  */
 typedef enum  {
 
-	SLIP_END 		= 192,	///< 0xC0 Frame End
-	SLIP_ESC 		= 219,	///< 0xDB Frame Escape
+	SLIP_END 	= 192,	///< 0xC0 Frame End
+	SLIP_ESC 	= 219,	///< 0xDB Frame Escape
 	SLIP_ESC_END 	= 220,	///< 0xDC Transposed Frame End
 	SLIP_ESC_ESC 	= 221	///< 0xDD Transposed Frame Escape
 } slip_char_t;
 
-//#define SLIP_END		192		///< 0xC0 Frame End
-//#define SLIP_ESC 		219		///< 0xDB Frame Escape
+//#define SLIP_END	192	///< 0xC0 Frame End
+//#define SLIP_ESC 	219	///< 0xDB Frame Escape
 //#define SLIP_ESC_END	220 	///< 0xDC Transposed Frame End
-//#define SLIP_ESC_ESC	221		///< 0xDD Transposed Frame Escape
+//#define SLIP_ESC_ESC	221	///< 0xDD Transposed Frame Escape
 
 /**
  * Serial Line Internet Protocol decoding/encoding class.
