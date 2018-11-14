@@ -121,11 +121,8 @@ uint16_t SLIP::getFrame(unsigned char * frm, unsigned char * fifo, uint16_t fifo
 		
 	uint16_t frmlen = 0;
 	
-	// Search for trailing END
-	for ( uint16_t i = 1; i < fifonum; i++ ) {
-	
-		if ( fifo[i] == SLIP_END ) { frmlen = i+1; break;}
-	}
+	// Iterate FIFO byte buffer for trainling END
+	for ( uint16_t i = 1; i < fifonum; i++ ) { if ( fifo[i] == SLIP_END ) { frmlen = i+1; break;} }
 	
 	// Copy frame from FIFO to given frame buffer
 	if ( frmlen > 0 ) { memcpy(frm, fifo, frmlen); }
