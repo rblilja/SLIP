@@ -61,7 +61,7 @@ public:
 	 * Get frame from FIFO buffer. 
 	 * @param frm frame byte buffer (destination).
 	 * @param fifo fifo byte buffer (source).
-	 * @param fifonum number of bytes available in frame.
+	 * @param fifonum number of bytes available in fifo.
 	 * @return frame length, zero if no frame found.
 	 */
 	static uint16_t getFrame(unsigned char * frm, unsigned char * fifo, uint16_t fifonum);
@@ -69,7 +69,7 @@ public:
 	/**
 	 * Get necessary frame (destination) buffer length.
 	 * @param pgk packet byte buffer (source).
-	 * @param pkglen packer length.
+	 * @param pkglen packet length.
 	 * @return frame length.
 	 */
 	static uint16_t getFrameLength(unsigned char * pgk, uint16_t pkglen);
